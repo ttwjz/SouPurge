@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Pure Search (网络层净化)",
-  "version": "2.2.0",
+  "name": "搜净 - SouPurge",
+  "version": "0.0.1",
   "description": "在请求发出前拦截并移除 Baidu, Bing, Google 的追踪参数 (DNR模式)",
   "permissions": [
     "declarativeNetRequest",
