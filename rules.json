@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "transform": {
+                    "queryTransform": {
+                        "removeParams": [
+                            "sa", "usm", "f", "issp", "bs", "oq", "fr",
+
+                            "rsv_bp", "rsv_idx", "rsv_spt", "rsv_pq", "rsv_t",
+                            "rsv_enter", "rsv_dl", "rsv_btype", "rsv_sid",
+                            "rsv_sug", "rsv_sug1", "rsv_sug2", "rsv_sug3", "rsv_sug4", "rsv_sug5", "rsv_sug6", "rsv_sug7", "rsv_sug8", "rsv_sug9",
+                            "rsv_iqid", "rsv_page", "rsv_n", "rsv_p", "rsv_did", "rsv_ers",
+
+                            "inputT", "newi", "csrc", "tfflag", "ect", "qid", "fenlei", "plan",
+                            "tn", "ie", "plan",
+                            "dyTabStr", "lid", "isid", "prefixsug", "mod", "rsp", "_ss", "clist", "hsug", "f4s", "csor", "&_cr1",
+                            "sugid", "from", "cqid", "csq", "ptsg", "istc", "ver", "chk", "isid",
+                            "srcid", "group_class", "pmgr_token", "timestamp", "signature",
+                            "prod", "token", "json", "imod", "sid", "_t", "hisdata", "usegosug",
+                            "ch", "bar", "pre", "p", "sugsid"
+                        ]
+                    }
+                }
+            }
+        },
+
+        "condition": {
+            "requestDomains": [ "baidu.com" ],
+            "resourceTypes": [ "main_frame", "xmlhttprequest", "sub_frame", "ping", "other", "script" ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "transform": {
+                    "queryTransform": {
+                        "removeParams": [
+                            "cvid", "form", "pq", "sc", "qs", "sp", "ghc", "sk", "lq",
+                            "go", "ans", "refig", "plvar", "pc",
+                            "setmkt", "cc", "ld", "ssd", "sid", "muid", "muidb",
+                            "PC", "adppc", "FORM", "qpvt", "CREA", "search", "FPIG", "pglt"
+                        ]
+                    }
+                }
+            }
+        },
+        "condition": {
+            "requestDomains": [ "bing.com" ],
+            "resourceTypes": [ "main_frame", "xmlhttprequest", "sub_frame", "ping", "other" ]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "transform": {
+                    "queryTransform": {
+                        "removeParams": [
+                            "gws_rd", "client", "sxsrf", "ei", "ved", "uact", "fbs",
+                            "sclient", "biw", "bih", "gs_lcp", "sxsrf", "gs_rfai",
+                            "newwindow", "sca_esv", "oq", "gs_lp", "source", "iflsig",
+                            "sa", "aic", "cshid"
+                        ]
+                    }
+                }
+            }
+        },
+        "condition": {
+            "requestDomains": [ "google.com", "google.com.hk", "google.co.jp" ],
+            "resourceTypes": [ "main_frame", "xmlhttprequest" ]
+        }
+    }
+]
